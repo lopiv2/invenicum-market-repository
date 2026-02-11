@@ -1,0 +1,9 @@
+{
+  "type": "ElevatedButton",
+  "child": { "type": "text", "data": "Quién soy?" },
+  "onPressed": {
+    "actionType": "invenicum_sdk",
+    "method": "getUserName",
+    "params": {} 
+  }
+}
