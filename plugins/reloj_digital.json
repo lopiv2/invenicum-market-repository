@@ -1,7 +1,7 @@
 {
   "type": "container",
   "decoration": {
-    "color": "#000000",
+    "color": "#FFFFFF",
     "borderRadius": {
       "topLeft": 16.0,
       "topRight": 16.0,
