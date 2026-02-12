@@ -10,11 +10,14 @@
     }
   },
   "child": {
-    "type": "text",
-    "data": "12:00",
-    "style": {
-      "color": "#000000",
-      "fontSize": 24
-    }
+    "type": "center",
+      "child": {
+        "type": "text",
+        "data": "12:00",
+        "style": {
+          "color": "#000000",
+          "fontSize": 24
+        }
+      }
   }
 }
