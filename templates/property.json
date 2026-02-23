@@ -1,0 +1,15 @@
+{
+  "id": "tpl-property-002",
+  "name": "Propiedad Residencial",
+  "description": "Gestión de activos inmobiliarios y locales",
+  "category": "Inmuebles",
+  "tags": ["casa", "alquiler", "real estate", "vivienda"],
+  "author": "realestate_dev",
+  "fields": [
+    { "name": "Dirección", "type": "text", "required": true },
+    { "name": "Metros Cuadrados", "type": "number", "required": true },
+    { "name": "Tipo", "type": "select", "options": ["Piso", "Chalet", "Local"], "required": true }
+  ],
+  "downloadCount": 45,
+  "version": 1.0
+}
