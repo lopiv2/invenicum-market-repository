@@ -9,7 +9,7 @@
       "description": "Muestra un reloj elegante en tu dashboard.",
       "author": "Invenicum Team",
       "isOfficial": true,
-      "download_url": "https://raw.githubusercontent.com/lopiv2/invenicum-plugin-repository/main/plugins/reloj_digital.json"
+      "download_url": "https://raw.githubusercontent.com/lopiv2/invenicum-market-repository/main/plugins/reloj_digital.json"
     },
     {
       "id": "quien_soy",
@@ -18,7 +18,7 @@
       "description": "Muestra quien soy.",
       "author": "Invenicum Team",
       "isOfficial": true,
-      "download_url": "https://raw.githubusercontent.com/lopiv2/invenicum-plugin-repository/main/plugins/quien_soy.json"
+      "download_url": "https://raw.githubusercontent.com/lopiv2/invenicum-market-repository/main/plugins/quien_soy.json"
     },
     {
       "id": "sasdada",
@@ -27,7 +27,7 @@
       "description": "Plugin creado por usuario",
       "author": "Usuario Comunidad",
       "isOfficial": false,
-      "download_url": "https://raw.githubusercontent.com/lopiv2/invenicum-plugin-repository/main/plugins/sasdada.json"
+      "download_url": "https://raw.githubusercontent.com/lopiv2/invenicum-market-repository/main/plugins/sasdada.json"
     }
   ],
   "templates": [
@@ -39,7 +39,7 @@
       "tags": ["móvil", "apple", "android", "tecnología"],
       "author": "Invenicum Team",
       "authorAvatarUrl": "https://avatars.githubusercontent.com/u/invenicum",
-      "download_url": "https://raw.githubusercontent.com/lopiv2/invenicum-plugin-repository/main/templates/smartphone.json",
+      "download_url": "https://raw.githubusercontent.com/lopiv2/invenicum-market-repository/main/templates/smartphone.json",
       "downloadCount": 150,
       "version": 1.1
     },
@@ -51,7 +51,7 @@
       "tags": ["nintendo", "sega", "retro", "gaming"],
       "author": "Invenicum Team",
       "authorAvatarUrl": "https://avatars.githubusercontent.com/u/invenicum",
-      "download_url": "https://raw.githubusercontent.com/lopiv2/invenicum-plugin-repository/main/templates/retro_game.json",
+      "download_url": "https://raw.githubusercontent.com/lopiv2/invenicum-market-repository/main/templates/retro_game.json",
       "downloadCount": 89,
       "version": 2.0
     }
