@@ -3,7 +3,7 @@
   "fields": [
     {
       "name": "Marca",
-      "type": "select",
+      "type": "dropdown",
       "options": [
         "Apple",
         "Samsung",
@@ -22,7 +22,7 @@
     },
     {
       "name": "Almacenamiento",
-      "type": "select",
+      "type": "dropdown",
       "options": [
         "64GB",
         "128GB",
@@ -44,7 +44,7 @@
     },
     {
       "name": "Estado del Dispositivo",
-      "type": "select",
+      "type": "dropdown",
       "options": [
         "Nuevo",
         "Excelente",
