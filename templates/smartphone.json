@@ -6,7 +6,7 @@
   "tags": ["tech", "mobile"],
   "author_name": "Invenicum Team",
   "is_official": true,
-  "is_public": true
+  "is_public": true,
   "fields": [
     {
       "name": "Marca",
