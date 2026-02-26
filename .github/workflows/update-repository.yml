@@ -66,10 +66,14 @@ jobs:
           git config --local user.name "github-actions[bot]"
           git add repository.json
           
-          # Si no hay cambios, terminamos pacíficamente
-          git diff --quiet && git diff --staged --quiet || (
+          # Solo procedemos si hay cambios reales en el índice
+          if ! git diff --quiet --staged; then
             git commit -m "bot: update repository.json index"
-            # 🚩 EL FIX: Traer cambios remotos y poner el commit del bot encima
+            
+            # 🚩 EL TRUCO: Traer los cambios del merge del PR y poner nuestro commit encima
             git pull --rebase origin main
+            
             git push origin main
-          )
+          else
+            echo "No changes to repository.json"
+          fi
