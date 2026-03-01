@@ -1,23 +1,31 @@
 {
-  "type": "container",
-  "decoration": {
-    "color": "#FFFFFF",
-    "borderRadius": {
-      "topLeft": 16,
-      "topRight": 16,
-      "bottomLeft": 16,
-      "bottomRight": 16
-    }
-  },
-  "child": {
-    "type": "center",
+  "id": "reloj_digital",
+  "name": "Reloj Digital Moderno",
+  "description": "Un reloj minimalista con fondo blanco y bordes redondeados.",
+  "version": "1.0.0",
+  "author": "lopiv2",
+  "slot": "dashboard_top",
+  "ui": {
+    "type": "container",
+    "decoration": {
+      "color": "#FFFFFF",
+      "borderRadius": {
+        "topLeft": 16,
+        "topRight": 16,
+        "bottomLeft": 16,
+        "bottomRight": 16
+      }
+    },
+    "child": {
+      "type": "center",
       "child": {
         "type": "text",
         "data": "12:00",
         "style": {
-          "color": "#000001",
+          "color": "#000000",
           "fontSize": 24
         }
       }
+    }
   }
 }
