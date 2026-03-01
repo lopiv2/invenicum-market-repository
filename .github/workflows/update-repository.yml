@@ -1,38 +1,22 @@
-name: Update Repository Index
-
-on:
-  push:
-    branches:
-      - main
-    paths:
-      - 'templates/**'
-
-permissions:
-  contents: write
-
-jobs:
-  update-index:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-
-      - name: Generate repository.json
+- name: Generate repository.json
         run: |
-          # 1. Crear la estructura base vacía
-          echo '{ "name": "Invenicum Market", "templates": [] }' > repository.json
+          # 1. Inicializar el archivo con estructura válida
+          echo '{"name": "Invenicum Market", "templates": []}' > repository.json
           
-          # 2. Iterar sobre los archivos de plantillas
+          # 2. Iterar y procesar cada archivo
           for file in templates/*.json; do
             [ -e "$file" ] || continue
             
             echo "Procesando $file..."
             
-            # Generar el objeto individual con sintaxis jq corregida (comas y comillas)
-            CURRENT_TEMPLATE=$(cat "$file" | jq --arg url "https://raw.githubusercontent.com/${{ github.repository }}/main/$file" '
-            {
+            # Generamos la URL base
+            URL="https://raw.githubusercontent.com/${{ github.repository }}/main/$file"
+            
+            # 🚀 CORRECCIÓN DE SINTAXIS: 
+            # - Usamos comillas dobles para las claves JSON
+            # - Agregamos la coma faltante después de downloadCount
+            # - Usamos --arg para pasar la URL de forma segura
+            jq --arg url "$URL" '.templates += [{
               "id": .id,
               "name": .name,
               "description": .description,
@@ -43,34 +27,15 @@ jobs:
               "download_url": $url,
               "downloadCount": (.downloadCount // 0),
               "version": (.version // 1.0)
-            }')
-
-            # Insertar el objeto en el array del índice usando --argjson
-            TMP_JSON=$(jq --argjson new "$CURRENT_TEMPLATE" '.templates += [$new]' repository.json)
-            echo "$TMP_JSON" > repository.json
+            }]' repository.json > repository.tmp.json && mv repository.tmp.json repository.json
           done
 
-      # 🛡️ Paso de Validación de Integridad
+      # 🛡️ Validación de integridad
       - name: Validate repository.json
         run: |
-          echo "Verificando validez del archivo repository.json..."
           if jq empty repository.json; then
-            echo "✅ JSON válido. Procediendo al commit."
+            echo "✅ El índice repository.json es válido."
           else
-            echo "❌ Error: El archivo repository.json generado está corrupto."
+            echo "❌ Error: El archivo generado no es un JSON válido."
             exit 1
-          fi
-
-      - name: Commit and push changes
-        run: |
-          git config --local user.email "github-actions[bot]@users.noreply.github.com"
-          git config --local user.name "github-actions[bot]"
-          git add repository.json
-          
-          if ! git diff --quiet --staged; then
-            git commit -m "bot: update repository.json index"
-            git pull --rebase origin main
-            git push origin main
-          else
-            echo "No hay cambios en el índice para actualizar."
           fi
