@@ -1,0 +1,64 @@
+name: Update Plugins Index
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'plugins/**'
+
+permissions:
+  contents: write
+
+jobs:
+  update-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+
+      - name: Generate repository_plugin.json
+        run: |
+          # 1. Inicializar con la estructura exacta que lee PluginService
+          echo '{"name": "Invenicum Market", "plugins": []}' > repository_plugin.json
+
+          # 2. Procesar cada plugin
+          for file in plugins/*.json; do
+            [[ "$file" == *"repository_plugin.json"* ]] && continue
+            [ -e "$file" ] || continue
+            
+            echo "Procesando $file..."
+            
+            URL="https://raw.githubusercontent.com/${{ github.repository }}/main/$file"
+            
+            # 🚩 MAPEO DINÁMICO: Ajustado para que PluginService.js no falle
+            PLUGIN=$(jq --arg url "$URL" '{
+              "id": .id,
+              "name": .name,
+              "description": (.description // ""),
+              "version": (.version // "1.0.0"),
+              "author": (.author // "Community"),
+              "slot": (.slot // "dashboard_top"),
+              "download_url": $url
+            }' "$file")
+
+            jq --argjson plugin "$PLUGIN" '.plugins += [$plugin]' \
+              repository_plugin.json > tmp.json && mv tmp.json repository_plugin.json
+          done
+
+      - name: Validate JSON Integrity
+        run: jq empty repository_plugin.json
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add repository_plugin.json
+          
+          if ! git diff --quiet --staged; then
+            git commit -m "bot: sync plugin index with repository_plugin.json"
+            git pull --rebase origin main
+            git push origin main
+          fi
