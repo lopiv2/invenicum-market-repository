@@ -21,34 +21,30 @@ jobs:
 
       - name: Generate repository.json
         run: |
-          # 1. Inicializar el archivo con estructura válida
           echo '{"name": "Invenicum Market", "templates": []}' > repository.json
 
-          # 2. Iterar y procesar cada archivo
           for file in templates/*.json; do
             [ -e "$file" ] || continue
-            
+
             echo "Procesando $file..."
-            
-            # Generamos la URL base
+
             URL="https://raw.githubusercontent.com/${{ github.repository }}/main/$file"
-            
-            # 🚀 CORRECCIÓN DE SINTAXIS:
-            # - Usamos comillas dobles para las claves JSON
-            # - Coma añadida tras downloadCount
-            # - Usamos redirección segura a archivo temporal
-            jq --arg url "$URL" '.templates += [{
+
+            TEMPLATE=$(jq --arg url "$URL" '{
               "id": .id,
               "name": .name,
               "description": .description,
               "category": .category,
               "tags": (.tags // []),
               "author": (.author // .authorName // "Invenicum Team"),
-              "authorAvatarUrl": .authorAvatarUrl,
+              "authorAvatarUrl": (.authorAvatarUrl // null),
               "download_url": $url,
               "downloadCount": (.downloadCount // 0),
-              "version": (.version // 1.0)
-            }]' repository.json > repository.tmp.json && mv repository.tmp.json repository.json
+              "version": (.version // "1.0")
+            }' "$file")
+
+            jq --argjson template "$TEMPLATE" '.templates += [$template]' \
+              repository.json > repository.tmp.json && mv repository.tmp.json repository.json
           done
 
       - name: Validate repository.json
@@ -65,7 +61,7 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add repository.json
-          
+
           if ! git diff --quiet --staged; then
             git commit -m "bot: update repository.json index"
             git pull --rebase origin main
