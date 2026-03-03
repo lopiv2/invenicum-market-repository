@@ -35,7 +35,7 @@
       "id": "reloj_digital",
       "name": "Reloj Digital Moderno",
       "description": "Un reloj minimalista con fondo blanco y bordes redondeados.",
-      "version": "1.0.0",
+      "version": "1.0.1",
       "author": "lopiv2",
       "slot": "dashboard_top",
       "download_url": "https://raw.githubusercontent.com/lopiv2/invenicum-market-repository/main/plugins/reloj_digital.json",
