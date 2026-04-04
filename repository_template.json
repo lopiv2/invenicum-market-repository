@@ -3,10 +3,14 @@
   "templates": [
     {
       "id": "tpl_9b0bf343",
-      "name": "Figures MOTU Origins",
-      "description": "Plantilla para catalogar la colección de figuras Masters of the Universe Origins.",
-      "category": "Coleccionables",
-      "tags": [],
+      "name": "MOTU Origins Figures",
+      "description": "Template for cataloging the Masters of the Universe Origins collection.",
+      "category": "Collectibles",
+      "tags": [
+        "toys",
+        "heman",
+        "motu"
+      ],
       "author": "lopiv2",
       "authorAvatarUrl": "https://avatars.githubusercontent.com/u/58883759?v=4",
       "download_url": "https://raw.githubusercontent.com/lopiv2/invenicum-market-repository/main/templates/figuras-motu-origins-tpl_9b0bf343.json",
