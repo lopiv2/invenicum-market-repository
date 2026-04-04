@@ -10,7 +10,7 @@
       "author": "lopiv2",
       "authorAvatarUrl": "https://avatars.githubusercontent.com/u/58883759?v=4",
       "download_url": "https://raw.githubusercontent.com/lopiv2/invenicum-market-repository/main/templates/figuras-motu-origins-tpl_9b0bf343.json",
-      "downloadCount": 3,
+      "downloadCount": 0,
       "version": "1.0"
     },
     {
@@ -22,23 +22,23 @@
       "author": "lopiv2",
       "authorAvatarUrl": "https://avatars.githubusercontent.com/u/58883759?v=4",
       "download_url": "https://raw.githubusercontent.com/lopiv2/invenicum-market-repository/main/templates/g-i-joes-tpl_1ab1560f.json",
-      "downloadCount": 1,
+      "downloadCount": 0,
       "version": "1.0"
     },
     {
       "id": "tpl-retro-game-003",
       "name": "Retrogames",
-      "description": "Template for retro videogames",
+      "description": "Template for Retro games",
       "category": "Leasure",
       "tags": [
         "tech",
         "gaming"
       ],
-      "author": "lopiv2",
+      "author": "Invenicum Team",
       "authorAvatarUrl": "https://avatars.githubusercontent.com/u/58883759?v=4",
       "download_url": "https://raw.githubusercontent.com/lopiv2/invenicum-market-repository/main/templates/retro_game.json",
-      "downloadCount": 1,
+      "downloadCount": 0,
       "version": "1.0"
-    },
+    }
   ]
 }
