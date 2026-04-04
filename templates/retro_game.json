@@ -46,7 +46,7 @@
       "ColecoVision", 
       "3DO", 
       "Neo Geo AES"
-      ]
+      ],
       "isRequired": true,
       "isSummable": false,
       "isCountable": false,
