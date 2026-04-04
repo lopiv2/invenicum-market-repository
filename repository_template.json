@@ -40,56 +40,5 @@
       "downloadCount": 1,
       "version": "1.0"
     },
-    {
-      "id": "tpl-smartphone-001",
-      "name": "Smartphone Standard",
-      "description": "Plantilla completa para móviles y tablets",
-      "category": "Electrónica",
-      "tags": [
-        "tech",
-        "mobile"
-      ],
-      "author": "Invenicum Team",
-      "authorAvatarUrl": null,
-      "download_url": "https://raw.githubusercontent.com/lopiv2/invenicum-market-repository/main/templates/smartphone.json",
-      "downloadCount": 31,
-      "version": "1.0"
-    },
-    {
-      "id": "tpl_a80bb51d",
-      "name": "Test",
-      "description": "",
-      "category": "General",
-      "tags": [],
-      "author": "lopiv2",
-      "authorAvatarUrl": "https://avatars.githubusercontent.com/u/58883759?v=4",
-      "download_url": "https://raw.githubusercontent.com/lopiv2/invenicum-market-repository/main/templates/tpl_a80bb51d.json",
-      "downloadCount": 0,
-      "version": "1.0"
-    },
-    {
-      "id": "tpl_c9a8f559",
-      "name": "Otra",
-      "description": "",
-      "category": "Libros",
-      "tags": [],
-      "author": "lopiv2",
-      "authorAvatarUrl": "https://avatars.githubusercontent.com/u/58883759?v=4",
-      "download_url": "https://raw.githubusercontent.com/lopiv2/invenicum-market-repository/main/templates/tpl_c9a8f559.json",
-      "downloadCount": 0,
-      "version": "1.0"
-    },
-    {
-      "id": "tpl_ed2de3eb",
-      "name": "Prueba final",
-      "description": "",
-      "category": "General",
-      "tags": [],
-      "author": "lopiv2",
-      "authorAvatarUrl": "https://avatars.githubusercontent.com/u/58883759?v=4",
-      "download_url": "https://raw.githubusercontent.com/lopiv2/invenicum-market-repository/main/templates/tpl_ed2de3eb.json",
-      "downloadCount": 4,
-      "version": "1.0"
-    }
   ]
 }
