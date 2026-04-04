@@ -1,0 +1,96 @@
+{
+  "id": "tpl_1ab1560f",
+  "name": "G.I. Joes",
+  "description": "Template for organizing G.I. Joes action figures.",
+  "downloadUrl": null,
+  "category": "Toys",
+  "tags": [],
+  "author": "lopiv2",
+  "authorAvatarUrl": "https://avatars.githubusercontent.com/u/58883759?v=4",
+  "fields": [
+    {
+      "id": null,
+      "name": "Unit Name",
+      "type": "text",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": null
+    },
+    {
+      "id": null,
+      "name": "Year",
+      "type": "number",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": null
+    },
+    {
+      "id": null,
+      "name": "Rank",
+      "type": "dropdown",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": [
+        "Private",
+        "Sergeant",
+        "Lieutenant",
+        "Captain",
+        "General"
+      ]
+    },
+    {
+      "id": null,
+      "name": "Accessories Included",
+      "type": "boolean",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": null
+    },
+    {
+      "id": null,
+      "name": "Purchase Price",
+      "type": "text",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": null
+    },
+    {
+      "id": null,
+      "name": "Condition",
+      "type": "dropdown",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": [
+        "Mint",
+        "Near Mint",
+        "Excellent",
+        "Good",
+        "Fair",
+        "Poor"
+      ]
+    }
+  ],
+  "isOfficial": true,
+  "isPublic": true,
+  "createdAt": "2026-04-04",
+  "updatedAt": "2026-04-04T13:57:27.166",
+  "downloadCount": 0
+}
