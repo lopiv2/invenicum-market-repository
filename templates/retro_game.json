@@ -1,29 +1,105 @@
 {
   "id": "tpl-retro-game-003",
   "name": "Retrogames",
-  "description": "Plantilla completa para videojuegos retro",
-  "category": "Ocio",
+  "description": "Template for Retro games",
+  "category": "Leasure",
   "tags": ["tech", "gaming"],
-  "author_name": "Invenicum Team",
-  "is_official": true,
-  "is_public": true,
+  "author": "Invenicum Team",
+  "authorAvatarUrl": "https://avatars.githubusercontent.com/u/58883759?v=4",
   "fields": [
     {
-      "name": "Plataforma",
+      "id": null,
+      "name": "Platform",
       "type": "dropdown",
-      "options": ["NES", "SNES", "MD"],
-      "required": true
+      "options": [
+      "NES", 
+      "SNES", 
+      "N64", 
+      "GameCube",
+      "Wii", 
+      "Wii U", 
+      "Switch", 
+      "Master System", 
+      "Mega Drive", 
+      "Genesis", 
+      "Sega Saturn", 
+      "Dreamcast", 
+      "PS1", 
+      "PS2", 
+      "PS3", 
+      "PS4", 
+      "PS5", 
+      "Xbox", 
+      "Xbox 360", 
+      "Xbox One", 
+      "Xbox Series X",
+      "Atari 2600", 
+      "Atari 5200", 
+      "Atari 7800", 
+      "Intellivision", 
+      "ColecoVision", 
+      "3DO", 
+      "Neo Geo AES"
+      ]
+      "isRequired": true,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null
     },
     {
-      "name": "Región",
+      "id": null,
+      "name": "Region",
       "type": "dropdown",
       "options": ["PAL", "NTSC"],
-      "required": true
+      "isRequired": true,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null
     },
     {
-      "name": "CIB (Completo)",
+      "id": null,
+      "name": "Genre",
+      "type": "text",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": null
+    },
+    {
+      "id": null,
+      "name": "Developer",
+      "type": "text",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": null
+    },
+    {
+      "id": null,
+      "name": "Year",
+      "type": "number",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": null
+    },
+    {
+      "id": null,
+      "name": "CIB (Complete in Box)",
       "type": "boolean",
-      "required": false
+      "isRequired": true,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null
     }
   ]
 }
