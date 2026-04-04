@@ -1,101 +1,133 @@
 {
-  "id": "tpl_9b0bf343",
-  "name": "Figures MOTU Origins",
-  "description": "Plantilla para catalogar la colección de figuras Masters of the Universe Origins.",
-  "downloadUrl": null,
-  "category": "Coleccionables",
-  "tags": [],
-  "author": "lopiv2",
-  "authorAvatarUrl": "https://avatars.githubusercontent.com/u/58883759?v=4",
-  "fields": [
-    {
-      "id": 1773577746102,
-      "name": "Nombre del Personaje",
-      "type": "text",
-      "isRequired": false,
-      "isSummable": false,
-      "isCountable": false,
-      "isMonetary": false,
-      "dataListId": null,
-      "options": null
-    },
-    {
-      "id": 1773577746103,
-      "name": "Wave",
-      "type": "number",
-      "isRequired": false,
-      "isSummable": false,
-      "isCountable": false,
-      "isMonetary": false,
-      "dataListId": null,
-      "options": null
-    },
-    {
-      "id": 1773577746104,
-      "name": "Año de Lanzamiento",
-      "type": "number",
-      "isRequired": false,
-      "isSummable": false,
-      "isCountable": false,
-      "isMonetary": false,
-      "dataListId": null,
-      "options": null
-    },
-    {
-      "id": 1773577746105,
-      "name": "Estado",
-      "type": "dropdown",
-      "isRequired": false,
-      "isSummable": false,
-      "isCountable": false,
-      "isMonetary": false,
-      "dataListId": null,
-      "options": [
-        "Nuevo (Sellado)",
-        "Blíster en buen estado",
-        "Blíster con detalles",
-        "Suelto (Completo)",
-        "Suelto (Incompleto)",
-        "Usado"
-      ]
-    },
-    {
-      "id": 1773577746106,
-      "name": "Precio de Adquisición",
-      "type": "price",
-      "isRequired": false,
-      "isSummable": false,
-      "isCountable": false,
-      "isMonetary": false,
-      "dataListId": null,
-      "options": null
-    },
-    {
-      "id": 1773577746107,
-      "name": "Completado con Accesorios",
-      "type": "boolean",
-      "isRequired": false,
-      "isSummable": false,
-      "isCountable": false,
-      "isMonetary": false,
-      "dataListId": null,
-      "options": null
-    },
-    {
-      "id": 1773577746108,
-      "name": "Link de Referencia",
-      "type": "url",
-      "isRequired": false,
-      "isSummable": false,
-      "isCountable": false,
-      "isMonetary": false,
-      "dataListId": null,
-      "options": null
-    }
-  ],
-  "isOfficial": true,
-  "isPublic": true,
-  "createdAt": "2026-03-15T12:29:15.394Z",
-  "updatedAt": "2026-03-15T13:29:15.250",
-  "downloadCount": 0
+   "id":"tpl_9b0bf343",
+   "name":"MOTU Origins Figures",
+   "description":"Template for cataloging the Masters of the Universe Origins collection.",
+   "downloadUrl":null,
+   "category":"Collectibles",
+   "tags":["toys", "heman", "motu"],
+   "author":"lopiv2",
+   "authorAvatarUrl":"https://avatars.githubusercontent.com/u/58883759?v=4",
+   "fields":[
+      {
+         "id":null,
+         "name":"Variant Type",
+         "type":"dropdown",
+         "isRequired":true,
+         "isSummable":false,
+         "isCountable":false,
+         "isMonetary":false,
+         "dataListId":null,
+         "options":[
+            "Standard Release",
+            "Lords of Power",
+            "200x Style",
+            "Snake Men Series",
+            "Filmation Style (Cartoon Collection)",
+            "Mini-Comic Variant"
+         ]
+      },
+      {
+         "id":null,
+         "name":"Wave",
+         "type":"number",
+         "isRequired":false,
+         "isSummable":false,
+         "isCountable":false,
+         "isMonetary":false,
+         "dataListId":null,
+         "options":null
+      },
+      {
+         "id":null,
+         "name":"Release Year",
+         "type":"number",
+         "isRequired":true,
+         "isSummable":false,
+         "isCountable":false,
+         "isMonetary":false,
+         "dataListId":null,
+         "options":null
+      },
+      {
+         "id":null,
+         "name":"Market Exclusivity",
+         "type":"dropdown",
+         "isRequired":true,
+         "isSummable":false,
+         "isCountable":false,
+         "isMonetary":false,
+         "dataListId":null,
+         "options":[
+            "General Retail",
+            "Mattel Creations Exclusive",
+            "Target Exclusive",
+            "Walmart Exclusive",
+            "Convention Exclusive (SDCC/Power-Con)"
+         ]
+      },
+      {
+         "id":null,
+         "name":"Purchase Price",
+         "type":"price",
+         "isRequired":false,
+         "isSummable":false,
+         "isCountable":false,
+         "isMonetary":false,
+         "dataListId":null,
+         "options":null
+      },
+      {
+         "id":null,
+         "name":"Accessories Included",
+         "type":"boolean",
+         "isRequired":false,
+         "isSummable":false,
+         "isCountable":false,
+         "isMonetary":false,
+         "dataListId":null,
+         "options":null
+      },
+      {
+         "id":null,
+         "name":"Mini-Comic Present",
+         "type":"boolean",
+         "isRequired":false,
+         "isSummable":false,
+         "isCountable":false,
+         "isMonetary":false,
+         "dataListId":null,
+         "options":null
+      },
+      {
+         "id":null,
+         "name":"Cardback Language",
+         "type":"dropdown",
+         "isRequired":false,
+         "isSummable":false,
+         "isCountable":false,
+         "isMonetary":false,
+         "dataListId":null,
+         "options":[
+            "US (English text)",
+            "International (Multi-language)",
+            "Clear (No text/European)"
+         ]
+      },
+      {
+         "id":null,
+         "name":"Reference Link",
+         "type":"url",
+         "isRequired":false,
+         "isSummable":false,
+         "isCountable":false,
+         "isMonetary":false,
+         "dataListId":null,
+         "options":null
+      }
+   ],
+   "isOfficial":true,
+   "isPublic":true,
+   "createdAt":"2026-03-15T12:29:15.394Z",
+   "updatedAt":"2026-03-15T13:29:15.250",
+   "downloadCount":0
 }
