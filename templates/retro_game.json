@@ -6,6 +6,11 @@
   "tags": ["tech", "gaming"],
   "author": "Invenicum Team",
   "authorAvatarUrl": "https://avatars.githubusercontent.com/u/58883759?v=4",
+  "isOfficial": true,
+  "isPublic": true,
+  "createdAt": "2026-04-04",
+  "updatedAt": "2026-04-04T13:57:27.166",
+  "downloadCount": 0,
   "fields": [
     {
       "id": null,
