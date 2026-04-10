@@ -2,6 +2,18 @@
   "name": "Invenicum Market",
   "templates": [
     {
+      "id": "tpl_73ec1bbd",
+      "name": "Board Games",
+      "description": "Template for managing board games collections.",
+      "category": "Games and Leasure",
+      "tags": [],
+      "author": "lopiv2",
+      "authorAvatarUrl": "https://avatars.githubusercontent.com/u/58883759?v=4",
+      "download_url": "https://raw.githubusercontent.com/lopiv2/invenicum-market-repository/main/templates/board-games-tpl_73ec1bbd.json",
+      "downloadCount": 0,
+      "version": "1.0"
+    },
+    {
       "id": "tpl_9b0bf343",
       "name": "MOTU Origins Figures",
       "description": "Template for cataloging the Masters of the Universe Origins collection.",
