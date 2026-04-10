@@ -1,0 +1,107 @@
+{
+  "id": "tpl_73ec1bbd",
+  "name": "Board Games",
+  "description": "Template for managing board games collections.",
+  "downloadUrl": null,
+  "category": "Games and Leasure",
+  "tags": [],
+  "author": "lopiv2",
+  "authorAvatarUrl": "https://avatars.githubusercontent.com/u/58883759?v=4",
+  "fields": [
+    {
+      "id": null,
+      "name": "Player number",
+      "type": "number",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": null
+    },
+    {
+      "id": null,
+      "name": "Play time (min)",
+      "type": "number",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": null
+    },
+    {
+      "id": null,
+      "name": "Game type",
+      "type": "dropdown",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": [
+        "Party",
+        "Eurogame",
+        "Strategy",
+        "Cooperative",
+        "Single Player",
+        "RPG",
+        "Cards"
+      ]
+    },
+    {
+      "id": null,
+      "name": "Estado del juego",
+      "type": "dropdown",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": [
+        "Damaged",
+        "Brand new",
+        "Good condition",
+        "Missing parts"
+      ]
+    },
+    {
+      "id": null,
+      "name": "Complexity (1-5)",
+      "type": "number",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": null
+    },
+    {
+      "id": null,
+      "name": "Buying price",
+      "type": "price",
+      "isRequired": false,
+      "isSummable": true,
+      "isCountable": false,
+      "isMonetary": true,
+      "dataListId": null,
+      "options": null
+    },
+    {
+      "id": null,
+      "name": "Age recommended",
+      "type": "number",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": null
+    }
+  ],
+  "isOfficial": true,
+  "isPublic": true,
+  "createdAt": "2026-04-10",
+  "updatedAt": "2026-04-10T11:20:19.553",
+  "downloadCount": 0
+}
