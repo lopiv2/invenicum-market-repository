@@ -1,0 +1,137 @@
+{
+  "id": "tpl_75f01b4e",
+  "name": "Pokemon TCG",
+  "description": "Template for Pokemon TCG card collectors.",
+  "downloadUrl": null,
+  "category": "Collections",
+  "tags": [],
+  "author": "lopiv2",
+  "authorAvatarUrl": "https://avatars.githubusercontent.com/u/58883759?v=4",
+  "fields": [
+    {
+      "id": null,
+      "name": "Rarity",
+      "type": "dropdown",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": [
+        "Promo",
+        "Common",
+        "Rare",
+        "Ultra Rare/V/VMAX/GX",
+        "Secret"
+      ]
+    },
+    {
+      "id": null,
+      "name": "Expansión / Set",
+      "type": "dropdown",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": [
+        "Shining Legends",
+        "Guardians Rising",
+        "Lost Thunder",
+        "Team Rocket"
+      ]
+    },
+    {
+      "id": null,
+      "name": "Es Holofoil? (Brillante)",
+      "type": "dropdown",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": [
+        "Holo / Reverse",
+        "Full Art / Rainbow",
+        "No"
+      ]
+    },
+    {
+      "id": null,
+      "name": "Card Number",
+      "type": "text",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": null
+    },
+    {
+      "id": null,
+      "name": "Price",
+      "type": "price",
+      "isRequired": false,
+      "isSummable": true,
+      "isCountable": false,
+      "isMonetary": true,
+      "dataListId": null,
+      "options": null
+    },
+    {
+      "id": 1776096911112,
+      "name": "Grade",
+      "type": "text",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": null
+    },
+    {
+      "id": 1776096924790,
+      "name": "Adquisition date",
+      "type": "date",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": null
+    },
+    {
+      "id": 1776096960081,
+      "name": "Language",
+      "type": "text",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": null
+    },
+    {
+      "id": 1776096976302,
+      "name": "Type",
+      "type": "dropdown",
+      "isRequired": false,
+      "isSummable": false,
+      "isCountable": false,
+      "isMonetary": false,
+      "dataListId": null,
+      "options": [
+        "Fire",
+        "Water",
+        "Plant",
+        "Psychic",
+        "Normal"
+      ]
+    }
+  ],
+  "isOfficial": true,
+  "isPublic": true,
+  "createdAt": "2026-04-13",
+  "updatedAt": "2026-04-13T18:19:58.804",
+  "downloadCount": 0
+}
